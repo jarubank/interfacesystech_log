@@ -1,0 +1,3 @@
+<launch>
+    <node name="interfacesystech_logger_remote" pkg="interfacesystech_log" type="interfacesystech_log_server.py" args="127.0.0.1:10425" output="screen"/>
+</launch>

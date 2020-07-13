@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find interfacesystech_log)/launch/interfacesystech_log.launch" />
+    <node name="interfacesystech_logger_client" pkg="interfacesystech_log" type="interfacesystech_log_client.py"/>
+    <node name="interfacesystech_logger_remote" pkg="interfacesystech_log" type="interfacesystech_log_server.py" args="0.0.0.0:9999"/>
+</launch>
